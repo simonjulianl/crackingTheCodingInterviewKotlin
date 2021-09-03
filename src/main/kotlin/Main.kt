@@ -17,8 +17,8 @@ fun main(args: Array<String>) {
     val date = LocalDateTime.now()
     println(date.plusDays(5).toLocalTime())
 
-    val inputStream = FileInputStream(File(args[0]))
-    System.setIn(inputStream)
+//    val inputStream = FileInputStream(File(args[0]))
+//    System.setIn(inputStream)
     println("is unique : ${isUniqueAlt("test")}")
     println("check permutation : ${checkPermutation("test", "ttes")}")
     println("urlify: ${URLify("test test")}")
@@ -38,15 +38,6 @@ fun main(args: Array<String>) {
         println("")
     }
 
-    println(
-        "rotate matrix : ${
-            rotateMatrix(
-                arrayOf(
-                    intArrayOf(1, 2, 3),
-                    intArrayOf(4, 5, 6),
-                    intArrayOf(7, 8, 9)
-                )
-            )
-        }"
-    )
+    var test: UInt = 0u
+    println(--test)
 }
